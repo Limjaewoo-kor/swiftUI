@@ -1,0 +1,18 @@
+SwiftUI_Authentication
+
+SwiftUI에 Firebase의 Auth를 이용하여 외부 로그인 및 이메일 계정을 연결할 수 있으며, 
+
+
+
+로그인
+Auth.auth().signIn(withEmail: email, password: password) { }
+
+로그아웃
+Auth.auth().signOut()
+
+회원가입
+Auth.auth().createUser(withEmail: email, password: password) { }
+
+이렇게 사용 할 수 있다.
+
+또한 회원가입 기능을 포함한 이유는 어플 제작중 계정간 공유 기능을 넣기 위함이었다.
